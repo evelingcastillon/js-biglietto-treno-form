@@ -16,5 +16,12 @@ main {
     border: 1px solid rgb(185, 20, 80);
 }
 .bg_gray {
-    
+    background-color: rgb(128, 128, 128);
+}
+.border_top_gray {
+    border-top: 1px solid rgb(128, 128, 128);
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+button:hover {
+    border: 2px solid rgb(185, 20, 80);
 }
