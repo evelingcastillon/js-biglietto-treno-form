@@ -30,16 +30,16 @@
                         <input id="km" class="text-center rounded border_bordeaux" type="text">
                     </div>
                     <div class="col-lg-3 pt-lg-3">
-                        <select class="rounded border_bordeaux" name="scelta">
-                            <option value="opt1">Minorenne</option>
-                            <option value="opt2">Maggiorenne</option>
-                            <option value="opt3">Over 65</option>
+                        <select id="eta_utente" class="rounded border_bordeaux" name="scelta">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over_65">Over 65</option>
                         </select>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center text-center py-lg-4">
                     <div class="col-lg-1">
-                        <button class="rounded text_bordeaux font-weight-bold px-lg-1">
+                        <button id="genera_biglietto" class="rounded text_bordeaux font-weight-bold px-lg-1">
                             Genera
                         </button>
                     </div>
@@ -71,7 +71,7 @@
                         <div class="row m-lg-0">
                             <div class="col-lg-6 p-lg-4 d-flex flex-column bg_gray">
                                 <h5 class="font-weight-bold mb-0">NOME<br> PASEGGERO</h5>
-                                <h4 class="font-weight-bold">Pippo</h4>
+                                <h4 id="nome_biglietto" class="font-weight-bold"></h4>
                             
                             </div>
                             <div class="col-lg-6 p-lg-4">
@@ -92,7 +92,7 @@
                             </div>
                             <div class="col-lg-4 p-lg-4">
                                 <h5 class="font-weight-bold pt-2">Costo <br>biglietto</h5>
-                                <div class="col-lg-4 pt-5 m-0">3.36€</div>
+                                <div id="prezzo" class="col-lg-4 pt-5 m-0">3.36€</div>
                             </div>
                         </div>
                     </div>
