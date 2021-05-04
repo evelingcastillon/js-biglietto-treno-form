@@ -1,14 +1,3 @@
-
-
-//Codice treno (numero casuale tra 90000 e 100000 escluso)
-
-
-//Numero carrozza
-
-/* Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
-- il prezzo del biglietto è definito in base ai km (0.21 € al km) */
-
-
 // CALCOLO BIGLIETTO
 
 var generaBigliettoEl = document.getElementById('genera_biglietto');
@@ -28,7 +17,8 @@ generaBigliettoEl.addEventListener('click', function () {
     carrozzaElement.innerHTML = numeroCarrozza;
     //n. random
     var numeroRandom = Math.floor(Math.random() * 99999) + 90000;
-    document.getElementById("codice_treno").innerHTML = numeroRandom;
+    var numeroRandomEl = document.getElementById("codice_treno");
+    numeroRandomEl.innerHTML = numeroRandom;
     //prezzo
     var prezzoPerChilometro = kmElement.value * 0.21;
     if (etaUtenteElement.value === "minorenne") {
@@ -57,7 +47,30 @@ generaBigliettoEl.addEventListener('click', function () {
         
         var scontoElement = document.getElementById('sconto');
         scontoElement.innerHTML = "No Sconto";
-    }
-        
-        
+    }      
+});
+
+
+var cancelElement = document.getElementById('cancel');
+cancelElement.addEventListener('click', function () {
+    
+    var inputElement = document.getElementById("nome_utente");
+    inputElement.value = "";
+    var kmElement = document.getElementById("km");
+    kmElement.value = "";
+
+    document.getElementById('nome_biglietto').innerHTML = "";
+    var scontoElement = document.getElementById('sconto');
+    scontoElement.innerHTML = "";
+
+    var carrozzaElement = document.getElementById('numero_carrozza');
+    carrozzaElement.innerHTML = "";
+
+    var numeroRandomEl = document.getElementById("codice_treno")
+    numeroRandomEl.innerHTML = "";
+    
+    var prezzoElement = document.getElementById("prezzo");
+    prezzoElement.innerHTML = "";
+
+
 });
