@@ -53,13 +53,14 @@ generaBigliettoEl.addEventListener('click', function () {
 
 var cancelElement = document.getElementById('cancel');
 cancelElement.addEventListener('click', function () {
-    
+    //CALCOLO DEL BIGLIETTO
     var inputElement = document.getElementById("nome_utente");
     inputElement.value = "";
     var kmElement = document.getElementById("km");
     kmElement.value = "";
-
+    //DATI BIGLIETTO CLIENTI
     document.getElementById('nome_biglietto').innerHTML = "";
+    
     var scontoElement = document.getElementById('sconto');
     scontoElement.innerHTML = "";
 
